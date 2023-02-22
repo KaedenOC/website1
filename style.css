@@ -44,12 +44,12 @@ li a:hover {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 2px 8px whitesmoke;
+    position: relative;
 }
 
 .imgtext {
     text-align: center;
-    margin-left: 250px;
-    margin-right: 250px;
+    position: relative;
     box-shadow: 2px 2px 8px whitesmoke;
 }
 
@@ -59,7 +59,8 @@ li a:hover {
     background-color: white;
     border-radius: 15px;
     width: 40%;
-    margin: auto; 
+    margin: auto;
+    position: relative;
 }
 
 article img {
