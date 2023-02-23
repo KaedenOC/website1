@@ -9,36 +9,58 @@ greeting();
 let pageChoice = prompt("Would you like to see cats in a basket or the cat bean? Type basket, bean, or skip.");
 console.log(pageChoice);
 
-function pageChoiceBasket(){
+function userChoice(){
     if(pageChoice == "basket"){
-    document.write("Here Are Cats In A Basket");
-}}
-pageChoiceBasket();
+        document.write("Here Are Cats In A Basket");
+        return "basket";
+    } else if(pageChoice == "bean"){
+        document.write("Here Is The Cat Bean.");
+        return "basket";
+    } else if(pageChoice == "skip"){
+        document.write("Enjoy the Site.");
+        return "skip";
+    }  else {
+        document.write("I Don't Recognize That Input..");
 
-function pageChoiceBean(){
-    if(pageChoice == "bean"){
-    document.write("Here Is The Cat Bean."); 
-}}
-pageChoiceBean();
-
-function pageChoiceSkip(){
-    let pageChoiceSkip = prompt("OK Enjoy The Site!");
+    }
 }
-pageChoiceSkip();
+userChoice();
 
 
 
 
-// if(pageChoice == "basket"){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function pageChoiceBasket(){
+//     if(pageChoice == "basket"){
 //     document.write("Here Are Cats In A Basket");
-// } 
-// else if(pageChoice == "bean"){
+// }}
+// pageChoiceBasket();
+
+// function pageChoiceBean(){
+//     if(pageChoice == "bean"){
 //     document.write("Here Is The Cat Bean.");
-// } else if(pageChoice == "skip"){
-//     document.write("Enjoy the Site.");
-// }  else {
-//     document.write("I Don't Recognize That Input..");
-// }
+// }}
+// pageChoiceBean();
+
+// function pageChoiceSkip(){
+//     if(pageChoice == "skip"){
+//     let pageChoiceSkip = prompt("OK Enjoy The Site!")
+// }}
+// pageChoiceSkip();
+
 
 
 
