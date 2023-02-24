@@ -31,14 +31,14 @@ userChoice();
 function userCats(){
     let catPics = parseInt(prompt("Quick Question.. How many cats do you have? Pick a number between 0 and 10!"));
     console.log ("user has " + catPics + "cats");
-    if (catPics <= '10'){
+    if (catPics <= 10){
         alert("Awesome");
         console.log("user has" + catPics + "cats");
-    for (let i = 0; i <= '10'; i++){
+    for (let i = 0; i < catPics; i++){
         document.write('<img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" height="40" width="40">');}
         
         return userCats;
-    } else if (catPics > '10'){
+    } else if (catPics > 10){
         alert("Gotta pick between 0 and 10!");
         console.log("user has" + catPics + "cats");
         userCats()
