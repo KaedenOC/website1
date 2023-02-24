@@ -21,7 +21,9 @@ function userChoice(){
         document.write("Enjoy the Site.");
         console.log("skip");
     } else {
-        console.log ("I do not recognise this input.");
+        alert("I do not recognize this input!");
+        console.log ("I do not recognize this input.");
+        userChoice()
     }
 };
 userChoice();
