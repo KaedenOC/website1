@@ -22,7 +22,6 @@ function userChoice(){
         console.log("skip");
     } else {
         console.log ("I do not recognise this input.");
-        return userChoice;
     }
 };
 userChoice();
