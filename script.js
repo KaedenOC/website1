@@ -20,12 +20,36 @@ function userChoice(){
     } else if(pageChoice == "skip"){
         document.write("Enjoy the Site.");
         console.log("skip");
-    }  else {
+    }   else {
         console.log ("I do not recognise this input.");
-        userChoice();
+        // userChoice();
     }
 }
 userChoice();
+
+function userCats(){
+    let catPics = prompt("Quick Question.. How many cats do you have? Pick a number between 0 and 100!");
+    console.log ("user has " + catPics + "cats");
+    // if (catPics >= 100){
+    // alert("Thats not a number between 0 and 100 silly!");
+    // }
+}
+    for (i = 0; i <= "100"; i++){
+    show_image("https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80", 50, 50,"usercats");
+    userCats();
+}
+    console.log ("user has" + catPics + "cats");
+
+function show_image(src, width, height, alt){
+    let img = document.createElement("img");
+    img.src = src;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+    document.body.appendChild(img);
+}
+show_image();
+
 
 
 
