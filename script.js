@@ -3,7 +3,7 @@ function greeting(){
     console.log(userName);
     document.getElementById("welcome").textContent = "Welcome, " + userName;
     return userName;
-}
+};
 greeting();
 
 function userChoice(){
@@ -20,71 +20,25 @@ function userChoice(){
     } else if(pageChoice == "skip"){
         document.write("Enjoy the Site.");
         console.log("skip");
-    }   else {
+    } else {
         console.log ("I do not recognise this input.");
-        // userChoice();
+        return userChoice;
     }
-}
+};
 userChoice();
 
 function userCats(){
-    let catPics = prompt("Quick Question.. How many cats do you have? Pick a number between 0 and 100!");
+    let catPics = parseInt(prompt("Quick Question.. How many cats do you have? Pick a number between 0 and 10!"));
     console.log ("user has " + catPics + "cats");
-    // if (catPics >= 100){
-    // alert("Thats not a number between 0 and 100 silly!");
-    // }
+    for (let i = 0; i < catPics; i++){
+        document.write('<img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" height="40" width="40">');
+        if (catPics > 10){
+        alert("Gotta pick between 0 and 10!");
+        console.log("user has" + catPics + "cats");
+        }
+    }
 }
-    for (i = 0; i <= "100"; i++){
-    show_image("https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80", 50, 50,"usercats");
-    userCats();
-}
-    console.log ("user has" + catPics + "cats");
-
-function show_image(src, width, height, alt){
-    let img = document.createElement("img");
-    img.src = src;
-    img.width = width;
-    img.height = height;
-    img.alt = alt;
-    document.body.appendChild(img);
-}
-show_image();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function pageChoiceBasket(){
-//     if(pageChoice == "basket"){
-//     document.write("Here Are Cats In A Basket");
-// }}
-// pageChoiceBasket();
-
-// function pageChoiceBean(){
-//     if(pageChoice == "bean"){
-//     document.write("Here Is The Cat Bean.");
-// }}
-// pageChoiceBean();
-
-// function pageChoiceSkip(){
-//     if(pageChoice == "skip"){
-//     let pageChoiceSkip = prompt("OK Enjoy The Site!")
-// }}
-// pageChoiceSkip();
-
+userCats();
 
 
 
