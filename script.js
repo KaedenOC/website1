@@ -1,30 +1,31 @@
 function greeting(){
     let userName = prompt("Enter Your Name Please");
     console.log(userName);
-    document.write("Welcome, " + userName);
+    document.getElementById("welcome").textContent = "Welcome, " + userName;
     return userName;
 }
 greeting();
 
-let pageChoice = prompt("Would you like to see cats in a basket or the cat bean? Type basket, bean, or skip.");
-console.log(pageChoice);
-
 function userChoice(){
+    let pageChoice = prompt("Would you like to see cats in a basket or the cat bean? Type basket, bean, or skip.");
+    console.log(pageChoice);
     if(pageChoice == "basket"){
-        document.write("Here Are Cats In A Basket");
-        return "basket";
+        let basketText = document.getElementById("basket1");
+        basketText.textContent = 'Here Are Cats In A Basket';
+        console.log("basket");
     } else if(pageChoice == "bean"){
-        document.write("Here Is The Cat Bean.");
-        return "basket";
+        let basketText = document.getElementById("beantext");
+        basketText.textContent ="Here Is The Cat Bean.";
+        console.log("bean");
     } else if(pageChoice == "skip"){
         document.write("Enjoy the Site.");
-        return "skip";
+        console.log("skip");
     }  else {
-        document.write("I Don't Recognize That Input..");
-
+        console.log ("I do not recognise this input.");
+        userChoice();
     }
 }
-
+userChoice();
 
 
 
