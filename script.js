@@ -14,8 +14,8 @@ function userChoice(){
         basketText.textContent = 'Here Are Cats In A Basket';
         console.log("basket");
     } else if(pageChoice == "bean"){
-        let basketText = document.getElementById("beantext");
-        basketText.textContent ="Here Is The Cat Bean.";
+        let beanText = document.getElementById("beantext");
+        beanText.textContent ="Here Is The Cat Bean.";
         console.log("bean");
     } else if(pageChoice == "skip"){
         document.write("Enjoy the Site.");
@@ -46,7 +46,6 @@ function userCats(){
 }
 
 userCats();
-
 
 
 
